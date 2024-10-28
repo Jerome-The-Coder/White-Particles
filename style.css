@@ -1,0 +1,23 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background: black;
+  height: 100vh;
+  overflow: hidden;
+  cursor: url("cursor.png"), auto;
+}
+span {
+  background: white;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: animation 6s linear;
+  position: absolute;
+}
+@keyframes animation {
+  to {
+    translate: 0 -5000%;
+    opacity: 0;
+  }
+}
